@@ -1,0 +1,135 @@
+<!--
+Formulario PHP - Desarrollo Web 2016 - Universidad de Valparaíso
+===================================================================
+Copyright © 2016 Miguel González Aravena. All rights reserved.
+https://github.com/MiguelGonzalezAravena/FormularioPHP
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Experiencia 2">
+  <meta name="keywords" content="html, bootstrap, php, formulario, desarrollo, web">
+  <meta name="author" content="Sebastian Rubio">
+  <title>Formulario en PHP</title>
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+</head>
+<body>
+<div class="container">
+  <h1>Formulario en PHP</h1>
+  <!-- Formulario -->
+  <form enctype="multipart/form-data" method="post" action="enviar.php" accept-charset="UTF-8">
+    <!-- Hidden -->
+    <input type="hidden" name="enviado" value="1">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Formulario</h3>
+      </div>
+      <div class="panel-body">
+        <!-- Texto -->
+        <div class="form-group">
+          <b>Nombre</b>
+          <input type="text" class="form-control" name="nombre" placeholder="Ingrese su nombre">
+        </div>
+        <!-- Texto -->
+        <div class="form-group">
+          <b>Apellido</b>
+          <input type="text" class="form-control" name="apellido" placeholder="Ingrese su apellido">
+        </div>
+        <!-- Texto -->
+        <div class="form-group">
+          <b>Fecha de Nacimiento</b>
+        <input type="date" name="fecha">        
+        </div>
+
+        <!-- Opciones -->
+      
+        <div class="form-group">
+          <b>Sexo</b><br />
+          <input type="radio" name="sexo" value="m"> Masculino<br />
+          <input type="radio" name="sexo" value="f"> Femenino<br />
+        </div>
+        <!-- Select Region -->
+        <div class="form-group">
+          <b>Seleccione Una Region</b><br />
+          <select name="region" class="form-control">
+            <option value="">Seleccione una region</option>
+            <option value="RM">Región Metropolitana</option>
+            <option value="XV">XV Arica y Parinacota</option>
+            <option value="I">I Tarapacá</option>
+            <option value="II">II Antofagasta</option>
+            <option value="III">III Atacama</option>
+            <option value="IV">IV Coquimbo</option>
+            <option value="V">V Valparaíso</option>
+            <option value="VI">VI O'Higgins</option>
+            <option value="VII">VII Maule</option>
+            <option value="VIII">VIII Biobío</option>
+            <option value="IX">IX La Araucanía</option>
+            <option value="XIV">XIV Los Ríos</option>
+            <option value="X">X Los Lagos</option>
+            <option value="XI">XI Aysén</option>
+            <option value="XII">XII Magallanes y Antártica</option>
+          </select>
+        </div>
+
+        <!-- Areas Interes -->
+         <div class="form-group">
+          <b>Areas de interes</b><br />
+          <input type="checkbox" name="Ciencia" value="1"> Ciencia.<br />
+          <input type="checkbox" name="Deportes" value="1"> Deportes.<br />
+          <input type="checkbox" name="Pintura" value="1"> Pintura Rupestre.<br />
+          <input type="checkbox" name="Videos" value="1"> Videos de gatos.<br />
+         </div>
+        <!-- Url -->
+        <div class="form-group">
+          <b>Pagina Personal</b>
+          <input type="url" class="form-control" name="direccionweb" placeholder="Ingrese la url de su pagina personal">
+        </div>
+        <!-- Color -->
+        <div class="form-group">
+          <b>Color Favorito </b><br />
+          <input type="color" name="color_control" />
+        </div>
+        <!-- E-mail -->
+        <div class="form-group">
+          <b>Ingrese Email</b>
+          <input type="email" class="form-control" name="email" placeholder="Ingrese si email">
+        </div>
+       
+        <!-- Checkbox -->
+        <div class="form-group">
+          <b>Términos y condiciones</b><br />
+          <input type="checkbox" name="terminos" value="1"> Acepto y he leído los términos y condiciones.<br />
+        </div>
+        <div class="form-group">
+          <input type="checkbox" name="contenido" value="1"> <b>¿Ver la estructura del contenido que se envió?</b>
+        </div>
+      </div>
+      <div class="panel-footer">
+        <div class="text-right">
+          <a href="./" class="btn btn-primary">
+            <i class="glyphicon glyphicon-repeat"></i>
+            Reiniciar
+          </a>
+          <!-- Button submit -->
+          <button type="submit" class="btn btn-success">
+            Enviar
+            <i class="glyphicon glyphicon-menu-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </form>
+  <!-- Pie de página -->
+  <footer>
+    <div class="text-center">
+      <i class="glyphicon glyphicon-leaf"></i>
+      Desarrollado por <a href="" target="_blank">Sebastian Rubio</a>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
